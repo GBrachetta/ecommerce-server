@@ -11,6 +11,7 @@ flake8 = "*"
 black = "*"
 pylint-django = "*"
 autopep8 = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.9"
