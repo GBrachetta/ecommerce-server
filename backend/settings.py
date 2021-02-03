@@ -23,6 +23,7 @@ INSTALLED_APPS = [
     "base.apps.BaseConfig",
     "rest_framework",
     "corsheaders",
+    "django_cleanup.apps.CleanupConfig",
 ]
 
 MIDDLEWARE = [
@@ -93,6 +94,13 @@ USE_TZ = True
 
 
 STATIC_URL = "/static/"
+MEDIA_URL = "/images/"
+
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
+MEDIA_ROOT = "static/images"
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
