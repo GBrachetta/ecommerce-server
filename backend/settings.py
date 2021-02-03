@@ -22,9 +22,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "base.apps.BaseConfig",
     "rest_framework",
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -91,3 +93,7 @@ USE_TZ = True
 
 
 STATIC_URL = "/static/"
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]

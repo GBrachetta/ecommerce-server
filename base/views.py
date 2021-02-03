@@ -1,5 +1,3 @@
-from django.http import JsonResponse
-from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
@@ -8,6 +6,8 @@ from .products import products
 
 @api_view(["GET"])
 def getRoutes(request):
+    """ summary """
+
     routes = [
         "/api/products/",
         "/api/products/create/",
@@ -23,11 +23,15 @@ def getRoutes(request):
 
 @api_view(["GET"])
 def getProducts(request):
+    """ summary """
+
     return Response(products)
 
 
 @api_view(["GET"])
 def getProduct(request, pk):
+    """ summary """
+
     product = None
 
     for i in products:
