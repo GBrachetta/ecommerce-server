@@ -1,0 +1,11 @@
+# Variables
+@URL = http://127.0.0.1:8000/api
+
+# All products
+GET {{URL}}/products/
+
+###
+
+# One product
+
+GET {{URL}}/products/1
