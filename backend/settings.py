@@ -21,10 +21,10 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "base.apps.BaseConfig",
     "rest_framework",
     "corsheaders",
     "django_cleanup.apps.CleanupConfig",
+    "base.apps.BaseConfig",
 ]
 
 REST_FRAMEWORK = {
