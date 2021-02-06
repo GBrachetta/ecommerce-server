@@ -12,10 +12,19 @@ GET {{URL}}/products/1
 
 ###
 
-GET {{URL}}/users/profile
+GET {{URL}}/users/profile/
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MTU1MzE0LCJqdGkiOiIzNDFkZjhlMjEzM2U0NjIxOWExOWVhOTA0YjQyNTgyOSIsInVzZXJfaWQiOjF9.XsLYlsTEv4uFJh0985hfPQPSZQQWNCxLbS3XjuVXjeA
 
 ###
 
-GET {{URL}}/users
+GET {{URL}}/users/
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MTU1MzE0LCJqdGkiOiIzNDFkZjhlMjEzM2U0NjIxOWExOWVhOTA0YjQyNTgyOSIsInVzZXJfaWQiOjF9.XsLYlsTEv4uFJh0985hfPQPSZQQWNCxLbS3XjuVXjeA
+
+###
+
+POST {{URL}}/users/register/
+Content-Type: application/x-www-form-urlencoded
+
+name=Carla
+&email=carla@gmail.com
+&password=123123
