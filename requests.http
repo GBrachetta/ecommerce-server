@@ -28,3 +28,26 @@ Content-Type: application/x-www-form-urlencoded
 name=Carla
 &email=carla@gmail.com
 &password=123123
+
+###
+
+PUT {{URL}}/users/profile/update/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MzA5NjYyLCJqdGkiOiJjZTViOTc1YmRmNzg0NzdmYjlhMzg1ZTAxZWMyOGRmYSIsInVzZXJfaWQiOjN9.weDFeS1mW-w0B7HH258KaLr9xCK7vKXgKumClz0BOKY
+Content-Type: application/x-www-form-urlencoded
+
+name=Carla
+&email=carla@gmail.com
+&password=Cuperino
+
+###
+
+# The following one with json formatted data, does the same as above.
+PUT {{URL}}/users/profile/update/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MzA5NjYyLCJqdGkiOiJjZTViOTc1YmRmNzg0NzdmYjlhMzg1ZTAxZWMyOGRmYSIsInVzZXJfaWQiOjN9.weDFeS1mW-w0B7HH258KaLr9xCK7vKXgKumClz0BOKY
+Content-Type: application/json
+
+{
+    "name": "Carla",
+    "email":"carla@gmail.com",
+    "password":""
+}
