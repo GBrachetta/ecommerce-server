@@ -17,6 +17,7 @@ black = "*"
 pylint-django = "*"
 autopep8 = "*"
 python-dotenv = "*"
+isort = "*"
 
 [requires]
 python_version = "3.9"
