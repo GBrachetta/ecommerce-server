@@ -51,3 +51,8 @@ Content-Type: application/json
     "email":"carla@gmail.com",
     "password":""
 }
+
+###
+
+GET {{URL}}/orders/6/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MzY2ODU2LCJqdGkiOiI3Nzc2Y2UyNjliYWI0YTM5YmI5YmMxYjQ5OGE4Mzg5ZSIsInVzZXJfaWQiOjF9.Sp8hOyFp0suQALk4A-xEEEwNLcx7vb2_SOAMD085vt0
