@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from rest_framework import status
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
@@ -76,3 +78,15 @@ def getOrderById(request, pk):
             {"detail": "Order does not exists"},
             status=status.HTTP_400_BAD_REQUEST,
         )
+
+
+@api_view(["PUT"])
+@permission_classes([IsAuthenticated])
+def updateOrderToPaid(request, pk):
+    order = Order.objects.get(_id=pk)
+
+    order.isPaid = True
+    order.paidAt = datetime.now()
+    order.save()
+
+    return Response("Order was paid")
