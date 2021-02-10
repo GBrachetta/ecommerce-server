@@ -1,3 +1,6 @@
+# Go to http://localhost:8000/api/users/login/ and login as admin to get an admin token,
+# or as a user to get a normal authentication token.
+
 # Variables
 @URL = http://127.0.0.1:8000/api
 
@@ -60,4 +63,11 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiY
 ###
 
 GET {{URL}}/orders/myorders/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MzY2ODU2LCJqdGkiOiI3Nzc2Y2UyNjliYWI0YTM5YmI5YmMxYjQ5OGE4Mzg5ZSIsInVzZXJfaWQiOjF9.Sp8hOyFp0suQALk4A-xEEEwNLcx7vb2_SOAMD085vt0
+
+###
+
+# Delete User
+
+DELETE {{URL}}/users/delete/2/
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MzY2ODU2LCJqdGkiOiI3Nzc2Y2UyNjliYWI0YTM5YmI5YmMxYjQ5OGE4Mzg5ZSIsInVzZXJfaWQiOjF9.Sp8hOyFp0suQALk4A-xEEEwNLcx7vb2_SOAMD085vt0
