@@ -62,6 +62,7 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiY
 
 ###
 
+# Get my orders
 GET {{URL}}/orders/myorders/
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MzY2ODU2LCJqdGkiOiI3Nzc2Y2UyNjliYWI0YTM5YmI5YmMxYjQ5OGE4Mzg5ZSIsInVzZXJfaWQiOjF9.Sp8hOyFp0suQALk4A-xEEEwNLcx7vb2_SOAMD085vt0
 
@@ -71,3 +72,24 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiY
 
 DELETE {{URL}}/users/delete/2/
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MzY2ODU2LCJqdGkiOiI3Nzc2Y2UyNjliYWI0YTM5YmI5YmMxYjQ5OGE4Mzg5ZSIsInVzZXJfaWQiOjF9.Sp8hOyFp0suQALk4A-xEEEwNLcx7vb2_SOAMD085vt0
+
+###
+
+# Get User by Id
+
+GET {{URL}}/users/3/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1MzY2ODU2LCJqdGkiOiI3Nzc2Y2UyNjliYWI0YTM5YmI5YmMxYjQ5OGE4Mzg5ZSIsInVzZXJfaWQiOjF9.Sp8hOyFp0suQALk4A-xEEEwNLcx7vb2_SOAMD085vt0
+
+###
+
+# Update user
+PUT {{URL}}/users/update/3/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1NTY0NjE1LCJqdGkiOiI3ZTFjODU5YzVhMDE0MWFjYTM5NzA4YWI3MmY0MTU2MCIsInVzZXJfaWQiOjF9.rejoQispeM4enDYVydrnKmpEyBBwU5s2Oqg_cKWubL4
+Content-Type: application/json
+
+{
+    "name": "Carla",
+    "email": "carla@gmail.com",
+    "isAdmin": false
+
+}
