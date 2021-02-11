@@ -91,7 +91,6 @@ Content-Type: application/json
     "name": "Carla",
     "email": "carla@gmail.com",
     "isAdmin": false
-
 }
 
 ###
@@ -99,3 +98,24 @@ Content-Type: application/json
 # Delete Product
 DELETE {{URL}}/products/delete/9
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1NTY0NjE1LCJqdGkiOiI3ZTFjODU5YzVhMDE0MWFjYTM5NzA4YWI3MmY0MTU2MCIsInVzZXJfaWQiOjF9.rejoQispeM4enDYVydrnKmpEyBBwU5s2Oqg_cKWubL4
+
+###
+
+# Create product (with default values)
+
+POST {{URL}}/products/create/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1NTY0NjE1LCJqdGkiOiI3ZTFjODU5YzVhMDE0MWFjYTM5NzA4YWI3MmY0MTU2MCIsInVzZXJfaWQiOjF9.rejoQispeM4enDYVydrnKmpEyBBwU5s2Oqg_cKWubL4
+
+###
+PUT {{URL}}/products/update/10/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1NTY0NjE1LCJqdGkiOiI3ZTFjODU5YzVhMDE0MWFjYTM5NzA4YWI3MmY0MTU2MCIsInVzZXJfaWQiOjF9.rejoQispeM4enDYVydrnKmpEyBBwU5s2Oqg_cKWubL4
+Content-Type: application/json
+
+{
+    "name": "Amazing product",
+    "price": 123,
+    "brand": "Brack tech",
+    "countInStock": 8,
+    "category": "Electronics",
+    "description": "Really amazing"
+}
