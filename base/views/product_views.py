@@ -11,7 +11,11 @@ from ..serializers import ProductSerializer
 def getProducts(request):
     """ summary """
 
-    products = Product.objects.all()
+    query = request.query_params.get("keyword")
+
+    if query is None:
+        query = ""
+    products = Product.objects.filter(name__icontains=query)
     serializer = ProductSerializer(products, many=True)
     return Response(serializer.data)
 
