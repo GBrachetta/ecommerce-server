@@ -126,3 +126,10 @@ Content-Type: application/json
 
 GET {{URL}}/orders/
 Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1NTY0NjE1LCJqdGkiOiI3ZTFjODU5YzVhMDE0MWFjYTM5NzA4YWI3MmY0MTU2MCIsInVzZXJfaWQiOjF9.rejoQispeM4enDYVydrnKmpEyBBwU5s2Oqg_cKWubL4
+
+###
+
+# Update order to delivered (For admins)
+
+PUT {{URL}}/orders/14/deliver/
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjE1NTY0NjE1LCJqdGkiOiI3ZTFjODU5YzVhMDE0MWFjYTM5NzA4YWI3MmY0MTU2MCIsInVzZXJfaWQiOjF9.rejoQispeM4enDYVydrnKmpEyBBwU5s2Oqg_cKWubL4
