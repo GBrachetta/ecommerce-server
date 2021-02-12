@@ -10,6 +10,11 @@ django-cors-headers = "*"
 pillow = "*"
 django-cleanup = "*"
 djangorestframework-simplejwt = "*"
+psycopg2-binary = "*"
+boto3 = "*"
+django-storages = "*"
+whitenoise = "*"
+gunicorn = "*"
 
 [dev-packages]
 flake8 = "*"
